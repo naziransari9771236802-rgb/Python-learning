@@ -30,21 +30,33 @@
 
 
 
-def calculate():
-    number = 10
-    number = number + 5
-    print(number)
-calculate()
+# def calculate():
+#     number = 10
+#     number = number + 5
+#     print(number)
+# calculate()
 
 
 
 
-def first():
-    name = "Nazir"
+# def first():
+#     name = "Nazir"
+#     print(name)
+
+# def second():
+#     print(name)  # NameError: name 'name' is not defined
+
+# first()
+# second()
+
+
+
+# _________________GLOBAL________________
+name = "Nazir"
+
+def student():
     print(name)
 
-def second():
-    print(name)  # NameError: name 'name' is not defined
+student()
 
-first()
-second()
+print(name)

@@ -60,3 +60,13 @@ def student():
 student()
 
 print(name)
+
+
+
+
+name = "Nazir"
+
+def student():
+    print("Student Name:", name)
+
+student()

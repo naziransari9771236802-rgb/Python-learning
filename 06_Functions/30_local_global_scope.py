@@ -143,3 +143,87 @@ add_student()
 leave_student()
 
 print("Total Student:", total_student)
+
+
+
+# ________________________SCOPE__________________
+# There are 4 types of scope_____
+
+# 1. Local Scope____
+def my_function():
+    name = "Nazir"
+    print(name)
+
+my_function()
+
+
+# 2. Enclosing scope______
+def outer():
+    name = "Sahjad"
+
+    def inner():
+        print(name)
+
+    inner()
+
+outer()
+
+
+
+# 3. GLobal Scope_____________
+name = "Salman"
+
+def my_function():
+    print(name)
+
+my_function()
+
+
+
+# 4. Built-in Scope______
+print("Hello")
+len("Nazir")
+max(10, 20, 30)
+min(10, 20, 30)
+
+
+# Practice____
+# x = 100
+# def outer():
+#     x = 50
+
+#     def inner():
+#         print(x)
+
+#     inner()
+
+# outer()
+
+
+
+x = 10
+
+def my_function():
+    x = 20
+
+    def inner():
+        x = 30
+        print(x)
+
+    inner()
+    print(x)
+
+my_function()
+print(x)
+
+
+
+
+x = 100
+
+def my_function():
+    global x
+    x = 200
+
+my_function()
+print(x)
